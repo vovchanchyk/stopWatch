@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+html,
+.app {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 18px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top:50px ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #363636;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover{
+  background-color: #666;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.stopwatch {
   display: flex;
   flex-direction: column;
+  height: 300px;
+  width: 500px;
+
+  
+}
+.stopwatch__display {
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: auto;
+  background-color: #484848; 
+  padding: 10px 0px;
+}
+.stopwatch__tabs {
+  height: 55px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  font-size: 70px;
+  margin-bottom: 5px;    
 }
-
-.App-link {
-  color: #61dafb;
+.stopwatch__numbers {   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
 }
+.stopwatch__colon {
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.stopwatch__btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+
+}
+.stopwatch__btn{
+  padding: 8px;
+  border-radius: 3px;
+  font-size:25px;
+  background-color: #484848;
+  color: #f3f3f3;
 }
